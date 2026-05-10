@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汇率信息"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_usd_to_cny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 USD = -- CNY"
+                android:textSize="16sp"
+                android:paddingVertical="4dp" />
+
+            <TextView
+                android:id="@+id/tv_usd_to_jpy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 USD = -- JPY"
+                android:textSize="16sp"
+                android:paddingVertical="4dp" />
+
+            <TextView
+                android:id="@+id/tv_cny_to_jpy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 CNY = -- JPY"
+                android:textSize="16sp"
+                android:paddingVertical="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵金属价格"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黄金 (XAU)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_gold_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- USD/盎司"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#B8860B"
+                android:paddingTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginVertical="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白银 (XAG)"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_silver_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- USD/盎司"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#708090"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后更新: --"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tv_next_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下次刷新: 30 秒"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立即刷新"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
