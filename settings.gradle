@@ -10,6 +10,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url '/home/user/AndroidStudioProjects/MyApplication13/my_flutter_module/build/host/outputs/repo'
+        }
+        maven {
+            url 'https://storage.googleapis.com/download.flutter.io'
+        }
     }
 }
 rootProject.name = "My Application"

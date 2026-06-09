@@ -41,6 +41,7 @@ configurations.all {
 dependencies {
 // 只使用新版 kotlin-stdlib
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+    debugImplementation 'com.example.my_flutter_module:flutter_debug:1.0'
 
     // 其他依赖...
     implementation 'androidx.core:core-ktx:1.12.0'

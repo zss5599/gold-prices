@@ -1,5 +1,6 @@
 package com.thundersoft.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import io.flutter.embedding.android.FlutterActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -81,6 +84,20 @@ public class MainActivity extends AppCompatActivity {
             if (!isRefreshing) {
                 refreshData();
             }
+        });
+
+        Button btnOpenFlutter = findViewById(R.id.btn_open_flutter);
+        btnOpenFlutter.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CustomFlutterActivity.class);
+            intent.putExtra("route", "/");
+            startActivity(intent);
+        });
+
+        Button btnOpenFlutterSecond = findViewById(R.id.btn_open_flutter_second);
+        btnOpenFlutterSecond.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CustomFlutterActivity.class);
+            intent.putExtra("route", "/second");
+            startActivity(intent);
         });
     }
 

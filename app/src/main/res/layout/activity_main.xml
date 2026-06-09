@@ -141,5 +141,19 @@
             android:text="立即刷新"
             android:layout_marginTop="16dp" />
 
+        <Button
+            android:id="@+id/btn_open_flutter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开 Flutter 页面"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_open_flutter_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开 Flutter 第二页"
+            android:layout_marginTop="8dp" />
+
     </LinearLayout>
 </ScrollView>
